@@ -37,6 +37,7 @@
     .burger{
         display: block!important;
         cursor: pointer;
+        width: fit-content;
     }
     .sideBarBanner{
         font-size: 13px;

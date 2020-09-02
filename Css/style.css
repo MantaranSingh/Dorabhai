@@ -25,8 +25,6 @@
         position: absolute;
         top: 10vh;
         right: 0;
-        min-height: 92vh;
-        background-color: white;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -250,6 +248,9 @@ height: 3em;
 }
 .burger {
     display: none;
+    position: relative;
+    top: 17px;
+    left: 10px;
 }
 .burger div{
     width: 25px;
@@ -257,9 +258,6 @@ height: 3em;
     margin-bottom: 4px;
     background-color: grey;
     border-radius: 8px;
-    position: relative;
-    top: 17px;
-    left: 10px;
     transition: all 0.5s ease;
 }
 .toggle .line1 {

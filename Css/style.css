@@ -17,10 +17,42 @@
     top: 0px;
     min-height: 90vh;
 }
-@media(min-width:768px){
-    .sideBar{
-        width: 275px;
+@media(max-width:768px){
+    body{
+        overflow: hidden;
     }
+    .sideBar{
+        position: absolute;
+        top: 10vh;
+        right: 0;
+        min-height: 92vh;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(-100%);
+        width: 100%;
+        transition: transform 0.5s ease-in;
+    }
+    .burger{
+        display: block!important;
+        cursor: pointer;
+    }
+    .sideBarBanner{
+        font-size: 13px;
+    }
+    .sideBarBanner img{
+        width: 3em;
+        height: 3em;
+    }
+    .join button{
+        width: 11em;
+        margin: 0 12px!important;
+    }
+}
+.navActive{
+    width: 65%;
+    transform: translateX(-53%);
 }
 .sideBarBanner {
     display: flex;
@@ -213,4 +245,18 @@ height: 3em;
     .classRoom{
         width: 90%;
     }
+}
+.burger {
+    display: none;
+}
+.burger div{
+    width: 25px;
+    height: 3px;
+    margin-bottom: 4px;
+    background-color: grey;
+    border-radius: 8px;
+    position: relative;
+    top: 17px;
+    left: 10px;
+    transition: all 0.5s ease;
 }

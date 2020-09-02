@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    width: 100vw;
+    height: 10vh;
+    box-shadow: 2px 3px 4px lightgray;
+}
+
+.sideBar {
+    width: 35%;
+    border: 1px solid lightgray;
+    background-color: white;
+    position: relative;
+    top: 0px;
+    min-height: 90vh;
+}
+@media(min-width:768px){
+    .sideBar{
+        width: 275px;
+    }
+}
+.sideBarBanner {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+.logo {
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin-right: 5px;
+}
+
+.sideBarStatus {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    width: 11em;
+    margin: 10px;
+}
+
+.sideBarDetails h4 {
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.sideBarDetails p {
+    font-size: 12px;
+    color: grey;
+}
+
+.sideBarStatus b {
+    color: black;
+    font-size: 15px;
+}
+
+.join {
+    display: flex;
+    margin: 15px;
+    align-items: center;
+}
+
+.join button {
+    flex: 1;
+    margin: 0 30px;
+    padding: 8px;
+    color: white;
+    background-color: red;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 10px 6px -6px #777;
+}
+.join button:hover{
+    cursor: pointer;
+    background-color: rgba(255, 0, 0, 0.753);
+}
+
+.sideBarList {
+    margin:0 10px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 37vh;
+}
+.sideBarList ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+}
+.sideBarList i{
+    color: red;
+    margin-right: 25px;
+}
+.sideBarList li{
+    padding: 7px;
+}
+.sideBarList li:hover{
+    cursor: pointer;
+    background-color: rgba(228, 227, 227, 0.815);
+}
+
+.container{
+    display: flex;
+    min-height: 90vh;
+}
+.wrapper{
+    background-color: #d3d3d363;
+    display: flex;
+    width: 100vw;
+}
+.cards{
+    background-color: white;
+    margin: 1.5em;
+    padding: 0.5em;
+    box-shadow: 0 2px 8px grey;
+    border-radius: 5px;
+}
+.cardHeader{
+    display: flex;
+    padding-bottom: 4px;
+    border-bottom: 1px solid lightgrey;
+}
+.cardHeader img{
+width: 3em;
+height: 3em;
+}
+.cardSection{
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5em 0;
+    border-top: 1px solid lightgrey;
+}
+.cardContent{
+    padding: 4%;
+    margin-bottom: 3em;
+    color: grey;
+    font-size: 15px;
+}
+.headerDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.headerDetails p{
+    color: grey;
+    font-size: small;
+}
+.cardSection div:hover,i:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.classRoom{
+    margin: 1.5em 0;
+    background-color: white;
+    /* padding: 0.5em; */
+    border-bottom: 1px solid lightgrey;
+    width: 70%;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px grey;
+}
+.rightSideBar{
+    flex: 1;
+    padding-right: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.classRoom p{
+    padding: 0.5em;
+    color: grey;
+    border-bottom: 1px solid lightgrey;
+}
+.users{
+    margin: 5% 0;
+    background-color: #cae1ff3d;
+    padding-left: 4%;
+    font-size: 13px;
+    overflow: auto;
+    height: 30%;
+}
+.users p{
+    font-size: 10px;
+    color: grey;
+}
+.users>div{
+    display: flex;
+    margin: 10px 0;
+    padding: 10px 0;
+}
+.users>div:hover{
+    background-color: #accbf3b7;
+    cursor: pointer;
+}
+.users img{
+    width: 2rem;
+    border-radius: 50%;
+    height: 2rem;
+    margin: 0 10px;
+}
+@media(min-width:1025px){
+    .users{
+        width: 60%;
+    }
+}
+@media(max-width:1024px){
+    .classRoom{
+        width: 90%;
+    }
+}

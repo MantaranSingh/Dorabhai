@@ -8,6 +8,51 @@
     <link rel="stylesheet" href="Css/style.css">
     <title>Dorabhai</title>
 </head>
+<style>
+    .cardContent {
+        margin: 0;
+        color: black;
+        font-size: medium;
+    }
+
+    .cardContent i {
+        color: red;
+    }
+
+    .cardContent div {
+        display: flex;
+        justify-content: space-between;
+        margin: 5px 0;
+        align-items: center;
+    }
+
+    .cardContent span {
+        font-size: small;
+        color: grey;
+    }
+
+    .cardContent button {
+        flex: 1;
+        margin-left: 10%;
+        color: white;
+        background-color: red;
+        border: none;
+        border-radius: 4px;
+        padding: 2%;
+        font-size: medium;
+        font-weight: 700;
+    }
+    .cardContent button:hover {
+        cursor: pointer;
+        background-color: rgba(255, 0, 0, 0.753);
+    }
+    @media(min-width: 1025px) {
+        .cardContent button {
+            width: 120px;
+            flex: none;
+        }
+    }
+</style>
 
 <body>
     <div class="header">
@@ -51,7 +96,7 @@
             </div>
             <div class="sideBarList">
                 <ul>
-                    <li>
+                    <li onclick="location.href='index.html'">
                         <i class="fas fa-wifi"></i>
                         Timeline
                     </li>
@@ -59,7 +104,7 @@
                         <i class="fas fa-vector-square"></i>
                         Live Class
                     </li>
-                    <li onclick="location.href='notes.html'">
+                    <li>
                         <i class="fas fa-book-open"></i>
                         Notes
                     </li>
@@ -95,7 +140,18 @@
                     </div>
 
                     <div class="cardContent">
-                        Aman, Aroop, Binayak submit your assignment Asap!! Last timing is 5:30pm today
+                        <div>
+                            <span>Topic</span>
+
+                        </div>
+                        <h3>React Js</h3>
+                        <div>
+                            <p>
+                                <span>Pages - 78</span>
+
+                            </p>
+                            <button>Read</button>
+                        </div>
                     </div>
                     <div class="cardSection">
                         <div>
@@ -124,8 +180,16 @@
                     </div>
 
                     <div class="cardContent">
-                        Quiz is tommorow be ready at 11am circulate this news among your friends, defaulters won't be
-                        considered
+                        <div>
+                            <span>Topic</span>
+                        </div>
+                        <h3>Bootstrap</h3>
+                        <div>
+                            <p>
+                                <span>Pages - 90</span>
+                            </p>
+                            <button>Read</button>
+                        </div>
                     </div>
                     <div class="cardSection">
                         <div>
@@ -146,7 +210,7 @@
             </div>
             <div class="rightSideBar">
                 <div class="classRoom">
-                    <p>About Classroom</p>                    
+                    <p>About Classroom</p>
                     <div style="height: 25px;"></div>
                 </div>
                 <h4 style="padding: 0 6%;">In Class</h4>
